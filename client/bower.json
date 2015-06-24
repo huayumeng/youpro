@@ -1,0 +1,28 @@
+{
+  "name": "youp.client",
+  "version": "1.0.0",
+  "authors": [
+    "wallace <huayumeng20@gmail.com>"
+  ],
+  "description": "client for youp",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "o2o"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react-router": "~0.13.3",
+    "react": "~0.13.3",
+    "reflux": "~0.2.8"
+  }
+}
