@@ -13,7 +13,6 @@ var ReactRouterBootstrap = require('react-router-bootstrap')
 
 var App = React.createClass({
     render: function() {
-        console.log('hhhhhh');
         return (
             <div>
                 NavItemLink<br />
