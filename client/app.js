@@ -1,8 +1,9 @@
+var React = require('react');
 var Router = require('react-router')
     ,RouteHandler  = Router.RouteHandler
     ,Route = Router.Route;
 
-var ReactBootstrap = reauire('react-bootstrap')
+var ReactBootstrap = require('react-bootstrap')
     ,Nav = ReactBootstrap.Nav,ListGroup = ReactBootstrap.ListGroup;
 
 var ReactRouterBootstrap = require('react-router-bootstrap')
@@ -12,35 +13,23 @@ var ReactRouterBootstrap = require('react-router-bootstrap')
 
 var App = React.createClass({
     render: function() {
+        console.log('hhhhhh');
         return (
             <div>
-            NavItemLink<br />
-            <Nav>
-            <NavItemLink
-        to="destination"
-        params={{ someparam: 'hello' }}>
-    Linky!
-</NavItemLink>
-</Nav>
-<br />
-ButtonLink<br />
-<ButtonLink
-to="destination"
-params={{ someparam: 'hello' }}>
-Linky!
-</ButtonLink>
-<br />
-<ListGroup>
-<ListGroupItemLink
-to="destination"
-params={{ someparam: 'hello' }}>
-Linky!
-</ListGroupItemLink>
-</ListGroup>
-<RouteHandler />
-</div>
-);
-}
+                NavItemLink<br />
+                <Nav>
+                    <NavItemLink to="destination" params={{ someparam: 'hello' }}>Linky!</NavItemLink>
+                </Nav>
+                <br />
+                ButtonLink<br />
+                <ButtonLink to="destination" params={{ someparam: 'hello' }}> Linky!</ButtonLink><br />
+                <ListGroup>
+                    <ListGroupItemLink to="destination" params={{ someparam: 'hello' }}>Linky!</ListGroupItemLink>
+                </ListGroup>
+                <RouteHandler />
+            </div>
+        );
+    }
 });
 
 var Destination = React.createClass({
