@@ -45,5 +45,4 @@ var routes = (
 
 Router.run(routes, function (Handler,state) {
     React.render(<Handler />, document.body);
-    console.log(state);
 });
