@@ -43,6 +43,7 @@ var routes = (
     </Route>
 );
 
-Router.run(routes, function (Handler) {
-    React.render(<Handler/>, document.body);
+Router.run(routes, function (Handler,state) {
+    React.render(<Handler />, document.body);
+    console.log(state);
 });
